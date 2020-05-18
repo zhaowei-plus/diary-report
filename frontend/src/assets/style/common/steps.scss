@@ -1,0 +1,99 @@
+@import "../variable/color";
+
+.ant-steps-label-vertical {
+  .ant-steps-item-icon {
+    margin-left: 28px; // 设计改变了原ant-steps-item-icon的width、height造成无法居中展示的问题，暂时手写vertical类型的margin-left，处理居中问题
+  }
+}
+.ant-steps-item-finish .ant-steps-item-icon {
+  border-color: $brand;
+
+  & > .ant-steps-icon {
+    color: $brand;
+  }
+}
+
+.ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title:after {
+  background-color: $brand;
+}
+
+.ant-steps-item-process .ant-steps-item-icon {
+  background: $brand;
+  border-color: $brand;
+}
+
+.ant-steps-item-custom .ant-steps-item-icon {
+  background: none;
+  border: 0;
+}
+
+.ant-steps-item-custom.ant-steps-item-process
+.ant-steps-item-icon
+> .ant-steps-icon {
+  color: $brand;
+}
+
+.ant-steps-item-wait {
+  .ant-steps-item-icon {
+    border: 1px solid $dGray;
+    border-color: $dGray !important;
+
+    & > .ant-steps-icon {
+      color: $dark;
+      font-weight: 300;
+    }
+  }
+}
+
+.ant-steps-item-icon {
+  width: 46px;
+  height: 46px !important;
+  line-height: 46px !important;
+  border-radius: 46px;
+  font-size: 20px;
+}
+
+.ant-steps-item-tail {
+  margin-left: 52px !important;
+  padding: 10.5px 31px !important;
+
+  &:after {
+    background: none !important;
+    background-color: $white !important;
+    border-top: 1px dashed $gray;
+  }
+}
+
+.ant-steps-item-content {
+  .ant-steps-item-title {
+
+    &:after {
+      top: 23px;
+      background: none !important;
+      background-color: $white !important;
+      border-top: 1px dashed $gray;
+    }
+  }
+}
+
+.ant-steps-item {
+  &:last-child {
+    & > .ant-steps-item-container,
+    & > .ant-steps-item-tail,
+    & > .ant-steps-item-content {
+
+      &:after {
+        display: none !important;
+      }
+    }
+
+    & > .ant-steps-item-content {
+      & > .ant-steps-item-title {
+
+        &:after {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

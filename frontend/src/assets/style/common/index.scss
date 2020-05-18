@@ -1,0 +1,301 @@
+@import "./reset";
+@import "../mixin";
+@import "./color";
+@import "./button";
+@import "./alert";
+@import "./menu";
+@import "./switch";
+@import "./dropdown";
+@import "./steps";
+@import "./scrollbar";
+@import "./nav";
+@import "./tab";
+@import "./table";
+@import "./anchor";
+@import "./error";
+@import "./input";
+@import "./select";
+@import "./tooltip";
+@import "./spin";
+@import "./radio";
+@import "./checkbox";
+@import "../variable/color.scss";
+
+$colors: (
+  (
+    name: "red",
+    value: $red
+  ),
+  (
+    name: "l-red",
+    value: $lRed
+  ),
+  (
+    name: "xl-red",
+    value: $xlRed
+  ),
+  (
+    name: "brown",
+    value: $brown
+  ),
+  (
+    name: "l-brown",
+    value: $lBrown
+  ),
+  (
+    name: "xl-brown",
+    value: $xlBrown
+  ),
+  (
+    name: "link",
+    value: $link
+  ),
+  (
+    name: "success",
+    value: $success
+  ),
+  (
+    name: "warning",
+    value: $warning
+  ),
+  (
+    name: "caution",
+    value: $caution
+  ),
+  (
+    name: "invalid",
+    value: $invalid
+  ),
+  (
+    name: "black",
+    value: $black
+  ),
+  (
+    name: "dark",
+    value: $dark
+  ),
+  (
+    name: "xd-gray",
+    value: $xdGray
+  ),
+  (
+    name: "d-gray",
+    value: $dGray
+  ),
+  (
+    name: "gray",
+    value: $gray
+  ),
+  (
+    name: "l-gray",
+    value: $lGray
+  ),
+  (
+    name: "xl-gray",
+    value: $xlGray
+  ),
+  (
+    name: "xxl-gray",
+    value: $xxlGray
+  ),
+  (
+    name: "white",
+    value: $white
+  )
+);
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.vh-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ellipsis-line-2 {
+  @include ellipsisLines(2);
+}
+
+.ellipsis-line-3 {
+  @include ellipsisLines(3);
+}
+
+@include baseMP(2, 100);
+@include colors($colors);
+
+.f12 {
+  font-size: 12px;
+}
+.f13 {
+  font-size: 13px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f15 {
+  font-size: 15px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f20 {
+  font-size: 20px;
+}
+.f24 {
+  font-size: 24px;
+}
+.f30 {
+  font-size: 30px;
+}
+
+.border {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.cur-p {
+  cursor: pointer;
+}
+.cur-d {
+  cursor: default;
+}
+.cur-disable {
+  cursor: not-allowed;
+}
+
+.ov-a {
+  overflow: auto;
+}
+.ov-h {
+  overflow: hidden;
+}
+.ov-s {
+  overflow: scroll;
+}
+
+.w200 {
+  width: 200px;
+}
+.w300 {
+  width: 300px;
+}
+.w400 {
+  width: 400px;
+}
+
+.word-break {
+  word-break: break-all;
+}
+
+.v-hidden {
+  visibility: hidden;
+}
+.v-show {
+  visibility: visible;
+}
+
+.f-dn {
+  display: none;
+}
+
+.pos-a {
+  position: absolute;
+}
+.pos-r {
+  position: relative;
+}
+.of-s {
+  overflow: scroll;
+}
+
+.of-x-s {
+  overflow-x: scroll;
+}
+.of-y-s {
+  overflow-y: scroll;
+}
+.of-a {
+  overflow: auto;
+}
+.of-h {
+  overflow: hidden;
+}
+
+.d-b {
+  display: block !important;
+}
+.d-n {
+  display: none !important;
+}
+.d-inline {
+  display: inline !important;
+}
+.d-ib {
+  display: inline-block;
+}
+.d-if {
+  display: inline-flex;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.cf:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+
+.cur-not-allowed {
+  cursor: not-allowed;
+}
+
+.totate-90 {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -moz-transform: rotate(90deg); /* Firefox */
+  -webkit-transform: rotate(90deg); /* Safari 和 Chrome */
+  -o-transform: rotate(90deg); /* Opera */
+}
+
+.to-ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+.br-all {
+  word-break: break-all;
+}

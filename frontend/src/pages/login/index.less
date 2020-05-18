@@ -1,0 +1,109 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 40px;
+  background-color: #f7f8f9;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & > &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+
+    .icon {
+      width: 27px;
+      height: 27px;
+      margin-right: 10px;
+    }
+
+    .title {
+      font-size: 19px;
+      color: #262a30;
+      font-weight: bold;
+    }
+  }
+
+  & > &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .login-from {
+      width: 340px;
+      padding: 60px 42px;
+      border: 1px solid #e9ecf0;
+
+      .ant-form-item-children {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        & > .ant-input,
+        & > .ant-input-password {
+          height: 40px;
+          line-height: 40;
+          border-radius: 2px;
+          background: #fff;
+          border: 1px solid rgba(203, 207, 214, 1);
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+
+      .login-submit {
+        width: 100%;
+
+        margin-top: 32px;
+        height: 40px;
+        border-radius: 2px;
+
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        border: none;
+      }
+    }
+
+    .login-description {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #5c626b;
+    }
+  }
+
+  & > &-footer {
+    .hidden {
+      display: none;
+    }
+
+    &__operation {
+      text-align: center;
+      height: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(92, 98, 107, 1);
+      line-height: 20px;
+      margin: 15px 0;
+
+      a {
+        margin: 0 10px;
+        color: rgba(92, 98, 107, 1);
+      }
+    }
+
+    &__description {
+      text-align: center;
+      height: 18px;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(149, 155, 163, 1);
+      line-height: 18px;
+    }
+  }
+}

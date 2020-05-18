@@ -1,0 +1,35 @@
+@import '../variable/color';
+
+.ant-tabs.ant-tabs-card .ant-tabs-nav {
+  //修正tabs card样式问题
+  .ant-tabs-tab {
+    margin-right: 2px;
+    padding: 0 16px;
+    line-height: 38px;
+    color: $xdGray;
+    background-color: #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 3px 3px 0px 0px;
+    transition: none;
+    a {
+      color: $xdGray;
+    }
+  }
+  .ant-tabs-tab-active {
+    font-weight: normal;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    border-bottom: none;
+    padding-bottom: 1px;
+
+    color: $brand;
+    a {
+      color: $brand;
+    }
+  }
+  .ant-tabs-ink-bar {
+    visibility: hidden !important;
+  }
+}

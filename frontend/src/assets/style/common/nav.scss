@@ -1,0 +1,18 @@
+@import "../variable/color";
+
+.nav-bar {
+  text-align: center;
+  border-bottom: 1px solid $lGray;
+
+  .nav {
+    margin: 0 20px;
+    display: inline-block;
+    color: $xdGray;
+    text-decoration: none;
+
+    &.active {
+      border-bottom: 2px solid $brand;
+      color: $brand;
+    }
+  }
+}

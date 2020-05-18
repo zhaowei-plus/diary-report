@@ -1,0 +1,88 @@
+@import "../variable/color";
+
+.ant-btn {
+  font-size: 12px;
+  border-color: $gray;
+  box-shadow: none;
+
+  &:focus {
+    color: $dark;
+    border-color: $gray;
+  }
+
+  &:hover {
+    color: $dark;
+    border-color: $dGray;
+  }
+
+  &.active,
+  &:active {
+    color: $dark;
+    border-color: $dGray;
+    background: $xxlGray;
+    font-weight: bold;
+  }
+}
+
+.ant-btn-primary {
+  background-color: $brand;
+  border-color: $brand;
+  color: $white;
+
+  &:focus,
+  &:hover {
+    background-color: lighten($brand, 10%);
+    border-color: lighten($brand, 10%);
+    color: $white;
+  }
+
+  &.active,
+  &:active {
+    background-color: darken($brand, 10%);
+    border-color: darken($brand, 10%);
+    color: $white;
+  }
+}
+
+.ant-btn-danger {
+  background-color: $white;
+  border-color: $gray;
+  color: $dark;
+
+  &:focus,
+  &:hover {
+    background-color: $caution;
+    border-color: $caution;
+    color: $white;
+  }
+
+  &.active,
+  &:active {
+    border-color: darken($caution, 10%);;
+    background-color: darken($caution, 10%);
+    color: $white;
+  }
+}
+
+.ant-btn.disabled,
+.ant-btn.disabled.active,
+.ant-btn.disabled:active,
+.ant-btn.disabled:focus,
+.ant-btn.disabled:hover,
+.ant-btn[disabled],
+.ant-btn[disabled].active,
+.ant-btn[disabled]:active,
+.ant-btn[disabled]:focus,
+.ant-btn[disabled]:hover {
+  background-color: $lGray;
+  border-color: $gray;
+  color: $gray;
+}
+
+.ant-btn-sm {
+  font-size: 12px;
+}
+
+.ant-btn-lg {
+  font-size: 14px;
+}

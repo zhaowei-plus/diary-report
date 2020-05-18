@@ -1,0 +1,7 @@
+@import "../variable/color";
+
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  background-color: $xlGray;
+  color: $brand;
+}

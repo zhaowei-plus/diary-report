@@ -1,0 +1,10 @@
+@import "../variable/color";
+
+.ant-input {
+  font-size: 12px;
+  border-color: $gray;
+}
+
+.ant-input::-webkit-input-placeholder {
+  color: $dGray;
+}

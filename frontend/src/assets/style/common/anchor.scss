@@ -1,0 +1,13 @@
+@import "../variable/color";
+
+.ant-anchor-ink-ball {
+  border-color: $brand;
+}
+
+.ant-anchor-link-active > .ant-anchor-link-title {
+  color: $brand;
+}
+
+.ant-anchor-link-title {
+  color: $xdGray;
+}

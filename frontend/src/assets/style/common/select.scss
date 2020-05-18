@@ -1,0 +1,22 @@
+@import "../variable/color";
+
+.ant-select {
+  font-size: 12px;
+}
+
+.ant-select::-webkit-input-placeholder {
+  color: $dGray;
+}
+
+.ant-select-dropdown {
+  font-size: 12px;
+}
+
+.ant-cascader-menus {
+  font-size: 12px;
+}
+
+.ant-select-selection {
+  border-color: $gray;
+  border-top-color: $gray;
+}

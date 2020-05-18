@@ -1,0 +1,144 @@
+@mixin ellipsisLines($line: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+$px: 'px';
+
+@mixin baseMP( $step: 5, $max: 30 ) {
+  @for $i from 0 through floor($max / $step) {
+    .m-#{$i * $step} {
+      margin: $i * $step#{$px};
+    }
+    .ml-#{$i * $step} {
+      margin-left: $i * $step#{$px};
+    }
+    .mr-#{$i * $step} {
+      margin-right: $i * $step#{$px};
+    }
+    .mt-#{$i * $step} {
+      margin-top: $i * $step#{$px};
+    }
+    .mb-#{$i * $step} {
+      margin-bottom: $i * $step#{$px};
+    }
+    // padding;
+    .p-#{$i * $step} {
+      padding: $i * $step#{$px};
+    }
+    .pl-#{$i * $step} {
+      padding-left: $i * $step#{$px};
+    }
+    .pr-#{$i * $step} {
+      padding-right: $i * $step#{$px};
+    }
+    .pt-#{$i * $step} {
+      padding-top: $i * $step#{$px};
+    }
+    .pb-#{$i * $step} {
+      padding-bottom: $i * $step#{$px};
+    }
+    .w#{$i * $step} {
+      width: $i * $step#{$px};
+    }
+    .h#{$i * $step} {
+      height: $i * $step#{$px};
+    }
+    .lh#{$i * $step} {
+      line-height: $i * $step#{$px};
+    }
+  }
+}
+
+@mixin clearfix() {
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+@mixin colors($colors) {
+  @for $i from 1 through length($colors) {
+    $item: nth($colors, $i);
+    $colorName: map-get($item, name);
+    $colorValue: map-get($item, value);
+
+    .c-#{$colorName} {
+      color: $colorValue;
+    }
+
+    .bgc-#{$colorName} {
+      background-color: $colorValue;
+    }
+
+    .bc-#{$colorName} {
+      border-color: $colorValue;
+    }
+
+		.hc-#{$colorName} {
+			&:hover {
+				color: $colorValue;
+			}
+    }
+    
+    .hbc-#{$colorName} {
+			&:hover {
+				border-color: $colorValue;
+			}
+    }
+
+    .hbgc-#{$colorName} {
+			&:hover {
+				background-color: $colorValue;
+			}
+    }
+  }
+}
+
+@mixin box-shadow($v1, $v2, $v3, $color) {
+  -moz-box-shadow: $v1 $v2 $v3 $color;
+  -webkit-box-shadow: $v1 $v2 $v3 $color;
+  box-shadow: $v1 $v2 $v3 $color;
+}
+
+@mixin border-radius($v) {
+  // behavior: url(/statics/htc/pie.htc)\9;
+  -webkit-border-radius: $v;
+  -moz-border-radius: $v;
+  border-radius: $v;
+}
+
+@mixin opacity($v) {
+  opacity: $v;
+  filter: alpha(opacity=$v * 100);
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+/**
+ * 不同分辨率背景图片；
+ */
+ @mixin bgImage($url) {
+  background-image: url($url + "@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  @media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2){
+    background-image: url($url + "@2x.png")
+  }
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+    background-image: url($url + "@2x.png")
+  }
+}

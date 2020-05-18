@@ -1,0 +1,56 @@
+@import "../variable/color";
+
+.ant-btn-group {
+  .ant-radio-button-wrapper {
+    font-size: 12px !important;
+    color: $xdGray !important;
+    border-color: $gray !important;
+
+    &:not(:first-child) {
+      &:before {
+        background-color: $gray !important;
+      }
+    }
+    &:hover {
+      color: $dark !important;
+    }
+    &:focus-within {
+      outline: none;
+    }
+  }
+  .ant-radio-button-wrapper-checked {
+    &:not(.ant-radio-button-wrapper-disabled) {
+      z-index: 1;
+      color: $xdGray;
+      background: $lGray;
+      border: 1px solid $gray;
+      box-shadow: -1px 0 0 0 $lGray;
+
+      &:first-child {
+        border-color: $gray;
+      }
+      &:before {
+        background-color: $gray !important;
+        opacity: 1;
+      }
+      &:hover {
+        color: $dark;
+        border-color: $gray;
+        box-shadow: none;
+      }
+      &:not(:first-child) {
+        border-left: none;
+
+        &:hover {
+          border-left: none;
+        }
+      }
+      &:focus-within {
+        outline: none
+      }
+      &:active {
+        color: $dark;
+      }
+    }
+  }
+}

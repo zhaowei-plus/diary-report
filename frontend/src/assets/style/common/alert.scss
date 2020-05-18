@@ -1,0 +1,21 @@
+@import "./color";
+
+.ant-alert-success {
+  background-color: rgba($success, 0.1);
+  border-color: rgba($success, 0.15);
+}
+
+.ant-alert-info {
+  background-color: rgba($link, 0.1);
+  border-color: rgba($link, 0.15);
+}
+
+.ant-alert-warning {
+  background-color: rgba($warning, 0.1);
+  border-color: rgba($warning, 0.15);
+}
+
+.ant-alert-error {
+  background-color: rgba($caution, 0.1);
+  border-color: rgba($caution, 0.15);
+}

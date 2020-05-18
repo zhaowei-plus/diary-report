@@ -1,0 +1,39 @@
+.ant-menu {
+  border-right: none !important;
+}
+
+.ant-menu-inline .ant-menu-item:after,
+.ant-menu-vertical-left .ant-menu-item:after,
+.ant-menu-vertical-right .ant-menu-item:after,
+.ant-menu-vertical .ant-menu-item:after {
+  right: auto;
+  left: 0;
+}
+
+.ant-menu-submenu-inline
+  > .ant-menu-submenu-title
+  .ant-menu-submenu-arrow:after,
+.ant-menu-submenu-inline
+  > .ant-menu-submenu-title
+  .ant-menu-submenu-arrow:before,
+.ant-menu-submenu-vertical-left
+  > .ant-menu-submenu-title
+  .ant-menu-submenu-arrow:after,
+.ant-menu-submenu-vertical-left
+  > .ant-menu-submenu-title
+  .ant-menu-submenu-arrow:before,
+.ant-menu-submenu-vertical-right
+  > .ant-menu-submenu-title
+  .ant-menu-submenu-arrow:after,
+.ant-menu-submenu-vertical-right
+  > .ant-menu-submenu-title
+  .ant-menu-submenu-arrow:before,
+.ant-menu-submenu-vertical
+  > .ant-menu-submenu-title
+  .ant-menu-submenu-arrow:after,
+.ant-menu-submenu-vertical
+  > .ant-menu-submenu-title
+  .ant-menu-submenu-arrow:before {
+  content: "";
+  background-image: linear-gradient(90deg, #959ba3, #959ba3);
+}

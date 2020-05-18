@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20f4da85-65c1-4631-bc5a-380ac987f58a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Less File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bcOsxkdPpwF7FPI7o5EJLjpKNn" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/xmWorkspace/cloud-mall-admin" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\selfWorkspace\umi\demo1\src\pages\diary\periods" />
+      <recent name="D:\selfWorkspace\umi\demo1\src\pages\formily\text-box" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\selfWorkspace\umi\demo1\src\pages\diary\periods" />
+      <recent name="D:\selfWorkspace\umi\demo1\src\pages\diary\articles" />
+      <recent name="D:\selfWorkspace\umi\demo1\src\pages\diary\info" />
+      <recent name="D:\selfWorkspace\umi\demo1\src\pages" />
+      <recent name="D:\selfWorkspace\umi\demo1\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20f4da85-65c1-4631-bc5a-380ac987f58a" name="Default Changelist" comment="" />
+      <created>1588928125442</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588928125442</updated>
+      <workItem from="1588928126582" duration="406000" />
+      <workItem from="1588937125652" duration="5000" />
+      <workItem from="1588937642936" duration="1720000" />
+      <workItem from="1588988088874" duration="311000" />
+      <workItem from="1588988437010" duration="4190000" />
+      <workItem from="1589159816409" duration="129000" />
+      <workItem from="1589357292500" duration="8546000" />
+      <workItem from="1589449208689" duration="1914000" />
+      <workItem from="1589456313838" duration="1346000" />
+      <workItem from="1589505903358" duration="725000" />
+      <workItem from="1589524365888" duration="528000" />
+      <workItem from="1589525202676" duration="11221000" />
+      <workItem from="1589764587089" duration="698000" />
+      <workItem from="1589767708070" duration="3739000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

@@ -1,0 +1,60 @@
+@import "../variable/color";
+
+// RangePicker
+.errorRangePicker {
+  >span {
+    border-color: $red;
+  }
+  input {
+    color: $red;
+    &::-webkit-input-placeholder {
+      color: $red;
+    }
+  }
+}
+
+// TimePicker, MonthPicker, WeekPicker, DatePicker
+.errorTimePicker, .errorMonthPicker, .errorWeekPicker, .errorDatePicker {
+  input {
+    border-color: $red;
+    color: $red;
+    &::-webkit-input-placeholder {
+      color: $red;
+    }
+  }
+}
+
+// Input
+.errorInput {
+  input {
+    border-color: $red;
+    &::-webkit-input-placeholder {
+      color: $red;
+    }
+  }
+}
+
+// InputNumber
+.errorInputNumber {
+  border-color: $red;
+  input::-webkit-input-placeholder {
+    color: $red;
+  }
+}
+
+// Select
+.errorSelect {
+  .ant-select-selection {
+    border-color: $red;
+    .ant-select-selection__placeholder {
+      color: $red;
+    }
+  }
+}
+
+// Upload
+.errorUpload {
+  .ant-upload {
+    border-color: $red;
+  }
+}
